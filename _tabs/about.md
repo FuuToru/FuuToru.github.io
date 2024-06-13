@@ -7,9 +7,11 @@ order: 4
 
 Welcome readers to my blog 😁
 
-I'm Dang Huu Tri, currently a student majoring in Data Science at the University of Industry Ho Chi Minh City.
+I am Dang Huu Tri, currently a student majoring in Data Science at the University of Industry Ho Chi Minh City.
 
-This is where I'll write about everything I've accumulated, covering various topics related to my studies and work. Moreover, I'm making an effort to write this blog in English to improve my language skills. If you notice any mistakes or inaccuracies, especially in technical terms, please provide feedback using the form below. The focus of my blog posts in the future will be on topics related to Image Processing and Natural Language Processing (NLP), which are the areas of research I have chosen to pursue.
+In this blog, I will share everything I have learned, covering various topics related to my studies and work. Additionally, I am writing this blog in English to improve my language skills. If you notice any mistakes or inaccuracies, especially in technical terms, please provide feedback using the form below.
+
+My future blog posts will focus on a variety of topics that I research. I plan to update the blog once a week, every Monday.
 
 Thank you for visiting my blog 🥰 Enjoy it!
 
