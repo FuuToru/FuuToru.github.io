@@ -28,8 +28,6 @@ url: "https://FuuToru.github.io"
 github:
   username: FuuToru # change to your github username
 
-facebook:
-  username: FuuToru # change to your facebook username
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -41,7 +39,6 @@ social:
     # - https://github.com/FuuToru # change to your github homepage
     # Uncomment below to add more social links
     - https://www.facebook.com/FuuToru
-    - https://www.linkedin.com/in/
 
 # Site Verification Settings
 webmaster_verifications:

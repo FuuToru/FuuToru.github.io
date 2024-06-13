@@ -17,6 +17,6 @@ Thank you for visiting my blog 🥰 Enjoy it!
 
 ### Comments and discussions
 
-📍Thanks for spending your energy for me.
+📍Thanks for spending your time on me.
 
 <iframe src="https://forms.gle/DdmAidKFda4MUDfP6" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">🔃Đang tải…</iframe>
