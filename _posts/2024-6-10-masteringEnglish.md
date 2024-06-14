@@ -3,9 +3,12 @@ title: "Mastering English: Tips for a Natural and Fluent Command of the Language
 date: 2024-6-10
 categories: [Beside]
 tags: [overview, basis, mastering, beginer, mindset]
-img_path: /imgs/masteringEnglish/
-image:
-    path: bground.jpeg
+toc: true
+math: true
+comments: true
+published: true
+image: 
+    path: /imgs/masteringEnglish/bground.jpeg
     alt: Mastering English
 ---
 
