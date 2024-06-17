@@ -19,7 +19,7 @@ Performance metrics are crucial in evaluating machine learning models as they qu
 Regression models predict continuous output, requiring metrics that evaluate the distance between predicted and actual values.
 
 1. **Mean Squared Error (MSE)**
-   - **Formula**: \( \text{MSE} = \frac{1}{N} \sum_{j=1}^{N} (y_j - \hat{y}_j)^2 \)
+   - **Formula**:   $$ \text{MSE} = \frac{1}{N} \sum_{j=1}^{N} (y_j - \hat{y}_j)^2 $$
    - **Key Points**:
      - Differentiable, thus suitable for optimization.
      - Penalizes larger errors more heavily due to squaring.
@@ -31,7 +31,7 @@ Regression models predict continuous output, requiring metrics that evaluate the
      ```
 
 2. **Mean Absolute Error (MAE)**
-   - **Formula**: \( \text{MAE} = \frac{1}{N} \sum_{j=1}^{N} |y_j - \hat{y}_j| \)
+   - **Formula**: $$  \text{MAE} = \frac{1}{N} \sum_{j=1}^{N} \| y_j - \hat{y}_j \|  $$
    - **Key Points**:
      - More robust to outliers compared to MSE.
      - Does not exaggerate errors.
@@ -43,7 +43,7 @@ Regression models predict continuous output, requiring metrics that evaluate the
      ```
 
 3. **Root Mean Squared Error (RMSE)**
-   - **Formula**: \( \text{RMSE} = \sqrt{\frac{1}{N} \sum_{j=1}^{N} (y_j - \hat{y}_j)^2} \)
+   - **Formula**: $$ \text{RMSE} = \sqrt{\frac{1}{N} \sum_{j=1}^{N} (y_j - \hat{y}_j)^2} $$
    - **Key Points**:
      - Retains differentiability.
      - Scales errors back to the same units as the original data.
@@ -56,7 +56,7 @@ Regression models predict continuous output, requiring metrics that evaluate the
      ```
 
 4. **R² (R-Squared)**
-   - **Formula**: \( R^2 = 1 - \frac{\sum (y_j - \hat{y}_j)^2}{\sum (y_j - \bar{y})^2} \)
+   - **Formula**: $$ R^2 = 1 - \frac{\sum (y_j - \hat{y}_j)^2}{\sum (y_j - \bar{y})^2} $$
    - **Key Points**:
      - Measures the proportion of variance explained by the model.
      - Ranges from -∞ to 1, with 1 indicating a perfect fit.
@@ -73,7 +73,7 @@ Regression models predict continuous output, requiring metrics that evaluate the
 Classification models predict discrete output, necessitating metrics that evaluate how well predicted classes match actual classes.
 
 1. **Accuracy**
-   - **Formula**: \( \text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Predictions}} \times 100 \)
+   - **Formula**: $$ \text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Predictions}} \times 100 $$
    - **Implementation**:
      ```python
      from sklearn.metrics import accuracy_score
@@ -89,7 +89,7 @@ Classification models predict discrete output, necessitating metrics that evalua
      ```
 
 3. **Precision**
-   - **Formula**: \( \text{Precision} = \frac{TP}{TP + FP} \)
+   - **Formula**: $$ \text{Precision} = \frac{TP}{TP + FP} $$
    - **Key Points**:
      - Focuses on Type I errors (FP).
    - **Implementation**:
@@ -99,7 +99,7 @@ Classification models predict discrete output, necessitating metrics that evalua
      ```
 
 4. **Recall (Sensitivity/Hit-Rate)**
-   - **Formula**: \( \text{Recall} = \frac{TP}{TP + FN} \)
+   - **Formula**: $$ \text{Recall} = \frac{TP}{TP + FN} $$
    - **Key Points**:
      - Focuses on Type II errors (FN).
    - **Implementation**:
@@ -109,7 +109,7 @@ Classification models predict discrete output, necessitating metrics that evalua
      ```
 
 5. **F1-Score**
-   - **Formula**: \( \text{F1-Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}} \)
+   - **Formula**: $$ \text{F1-Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}} $$
    - **Key Points**:
      - Harmonic mean of precision and recall.
      - Useful for imbalanced datasets.
