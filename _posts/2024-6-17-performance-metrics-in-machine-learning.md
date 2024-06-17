@@ -175,8 +175,8 @@ Understanding these metrics helps in selecting the right evaluation technique ba
 
 ### References
 
-<a name="performance metrics"></a>
-[1] Aayush Bajaj, "Performance Metrics in Machine Learning [Complete Guide]". <a href="https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide">https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide</a> (2023).
+<a name="performance metrics">
+[1] Aayush Bajaj, "Performance Metrics in Machine Learning [Complete Guide]". <a href="https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide">https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide</a> (2023).</a>
 
 ---
 I hope this posts helps you start your learning journey effectively. Good luck!
