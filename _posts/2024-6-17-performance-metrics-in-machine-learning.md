@@ -172,7 +172,7 @@ Classification models predict discrete output, necessitating metrics that evalua
      ```
 
 Understanding these metrics helps in selecting the right evaluation technique based on the specific requirements of the machine learning task at hand.
-
+<!-- 
 <a name="-reference"></a>
 ### References
 
@@ -182,7 +182,7 @@ Understanding these metrics helps in selecting the right evaluation technique ba
   <a href="https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide">
     https://neptune.ai/blog/performance-metrics-in-machine-learning-complete-guide
   </a> (2023).
-</p>
+</p> -->
 
 
 
