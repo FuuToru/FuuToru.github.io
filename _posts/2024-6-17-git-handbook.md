@@ -14,7 +14,7 @@ image:
 
 # The Comprehensive Git Handbook for Project Management
 
-Git is a powerful version control system that allows teams to collaborate efficiently on software projects. It tracks changes, allows multiple developers to work on the same codebase simultaneously, and helps manage the history of the project. This handbook provides an in-depth look at essential Git commands and concepts, making it easier to understand and leverage Git for effective project management.
+Git is a powerful version control system that allows teams to collaborate efficiently on software projects. It tracks changes, allows multiple developers to work on the same codebase simultaneously, and helps manage the history of the project. This post provides an in-depth look at essential Git commands and concepts, making it easier to understand and leverage Git for effective project management.
 
 ## Table of Contents
 
@@ -317,4 +317,13 @@ git add resolved-file
 git commit
 ```
 
-By understanding and utilizing these Git commands and best practices, you can manage your projects more effectively, ensuring smooth collaboration and a well-maintained codebase. Happy coding!
+By understanding and utilizing these Git commands and best practices, you can manage your projects more effectively, ensuring smooth collaboration and a well-maintained codebase.
+
+---
+I hope this posts helps you start your learning journey effectively. Good luck!
+
+### Comments and discussions 
+
+📍Thanks for spending your time on me.
+
+<iframe src="https://forms.gle/DdmAidKFda4MUDfP6" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">🔃Đang tải…</iframe>
