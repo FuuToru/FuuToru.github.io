@@ -1,7 +1,7 @@
 ---
 title: "Learning Machine Learning and Deep Learning: Resources and Effective Mindsets"
 date: 2024-6-10
-categories: [Beside]
+categories: [Handbook]
 tags: [overview, basis, machine learning, deep learning, mindset, resources ]
 ---
 In today's tech-driven world, machine learning (ML) and deep learning (DL) have become essential skills across various industries. If you're embarking on this journey, choosing the right resources and adopting an effective learning mindset are crucial. Here, I'll share some key resources and mindsets to help you master these concepts.
