@@ -17,7 +17,7 @@ timezone: Asia/Ho_Chi_Minh
 
 title: FuuToru # the main title
 
-tagline: My personal blog, write something I learned # it will display as the sub-title
+tagline: "If you have to answer a question twice, you should probably turn it into a blog post." # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   blog, toru, github
