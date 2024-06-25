@@ -48,23 +48,22 @@ The process of generating recommendations typically involves several steps:
 
 Matrix factorization is a widely used technique in collaborative filtering. It decomposes the user-item interaction matrix into two lower-dimensional matrices, capturing latent factors for users and items.
 
-The interaction matrix \( R \) can be approximated by the product of two matrices:
-
-\[ R \approx U \Sigma V^T \]
+The interaction matrix $ R $ can be approximated by the product of two matrices:
+$ R \approx U \Sigma V^T $
 
 where:
-- \( U \in \mathbb{R}^{m \times k} \) is the user-feature matrix.
-- \( \Sigma \in \mathbb{R}^{k \times k} \) is the diagonal matrix of singular values.
-- \( V \in \mathbb{R}^{n \times k} \) is the item-feature matrix.
-- \( m \) is the number of users.
-- \( n \) is the number of items.
-- \( k \) is the number of latent factors.
+- $ U \in \mathbb{R}^{m \times k} $ is the user-feature matrix.
+- $ \Sigma \in \mathbb{R}^{k \times k} $ is the diagonal matrix of singular values.
+- $ V \in \mathbb{R}^{n \times k} $ is the item-feature matrix.
+- $ m $ is the number of users.
+- $ n $ is the number of items.
+- $ k $ is the number of latent factors.
 
-The goal is to minimize the difference between the original matrix \( R \) and the product \( U \Sigma V^T \), which can be expressed as:
+The goal is to minimize the difference between the original matrix $ R $ and the product $ U \Sigma V^T $, which can be expressed as:
 
-\[ \min_{U, V} \sum_{(u, i) \in K} (R_{ui} - U_u^T V_i)^2 + \lambda (\|U_u\|^2 + \|V_i\|^2) \]
+$ \min_{U, V} \sum_{(u, i) \in K} (R_{ui} - U_u^T V_i)^2 + \lambda (\|U_u\|^2 + \|V_i\|^2) $
 
-Here, \( K \) is the set of known user-item interactions, and \( \lambda \) is a regularization parameter to prevent overfitting.
+Here, $ K $ is the set of known user-item interactions, and \( \lambda \) is a regularization parameter to prevent overfitting.
 
 #### Clustering
 
