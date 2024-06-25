@@ -8,8 +8,8 @@ math: true
 comments: true
 published: true
 image: 
-    path: /imgs/performance-metric-in-ML/performance-metrics-in-machine-learning.png
-    alt: Performance Metrics in Machine Learning
+    path: imgs/recommendation-system/bg.png
+    alt: Comprehensive Recommendation System
 ---
 
 Recommendation systems are an essential part of many online services, personalizing the user experience by suggesting relevant items based on user preferences and behavior. They play a crucial role in platforms like Netflix, Amazon, and Spotify, where personalized content recommendations can significantly enhance user engagement and satisfaction.
