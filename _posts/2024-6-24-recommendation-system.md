@@ -92,3 +92,10 @@ Neural networks, including autoencoders and recurrent neural networks (RNNs), ar
 Recommendation systems are powerful tools that personalize the user experience by suggesting relevant content based on user preferences and behavior. By leveraging various algorithms and approaches, they help businesses enhance user satisfaction, increase engagement, and drive sales.
 
 ---
+I hope this posts helps you start your learning journey effectively. Good luck!
+
+### Comments and discussions 
+
+📍Thanks for spending your time on me.
+
+<iframe src="https://forms.gle/DdmAidKFda4MUDfP6" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">🔃Đang tải…</iframe>
