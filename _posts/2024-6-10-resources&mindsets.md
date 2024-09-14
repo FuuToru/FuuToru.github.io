@@ -62,48 +62,29 @@ I hope this posts helps you start your learning journey effectively. Good luck!
 
 <iframe src="https://forms.gle/DdmAidKFda4MUDfP6" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">🔃Đang tải…</iframe>
 
-<form id="leadForm">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="text" name="phone" placeholder="Phone Number" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <input type="text" name="company" placeholder="Your Company" required><br>
-    <input type="text" name="subject" placeholder="Subject" required><br>
-    <textarea name="question" placeholder="Your Question" required></textarea><br>
-    <button type="submit">Submit</button>
+# Liên hệ với chúng tôi
+
+Vui lòng điền thông tin vào form dưới đây để liên hệ với chúng tôi:
+
+<form id="leadForm" method="POST" action="http://localhost:8069/api/lead">
+    <label for="name">Tên của bạn:</label><br>
+    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required><br><br>
+
+    <label for="phone">Số điện thoại:</label><br>
+    <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required><br><br>
+
+    <label for="company">Công ty:</label><br>
+    <input type="text" id="company" name="company" placeholder="Nhập tên công ty của bạn" required><br><br>
+
+    <label for="subject">Chủ đề:</label><br>
+    <input type="text" id="subject" name="subject" placeholder="Nhập chủ đề" required><br><br>
+
+    <label for="question">Câu hỏi của bạn:</label><br>
+    <textarea id="question" name="question" placeholder="Nhập câu hỏi của bạn" required></textarea><br><br>
+
+    <input type="submit" value="Gửi">
 </form>
 
-<script>
-document.getElementById('leadForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Ngăn form gửi theo cách mặc định
-
-    // Lấy dữ liệu từ form
-    var formData = {
-        name: this.name.value,
-        phone: this.phone.value,
-        email: this.email.value,
-        company: this.company.value,
-        subject: this.subject.value,
-        question: this.question.value
-    };
-
-    // Gửi dữ liệu đến API Odoo
-    fetch('http://localhost:8069/api/lead', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            alert('Tạo cơ hội thành công với ID: ' + data.lead_id);
-        } else {
-            alert('Lỗi: ' + data.message);
-        }
-    })
-    .catch(error => {
-        console.error('Lỗi:', error);
-    });
-});
-</script>
