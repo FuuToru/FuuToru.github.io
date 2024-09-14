@@ -92,7 +92,7 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
     };
 
     // Gửi dữ liệu đến API Odoo
-    fetch('http://your-odoo-domain.com/api/lead', {
+    fetch('http://localhost:8069/api/lead', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
