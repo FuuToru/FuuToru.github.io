@@ -102,13 +102,13 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
     .then(response => response.json())
     .then(data => {
         if (data.status === 'success') {
-            alert('Tạo cơ hội thành công với ID: ' + data.lead_id);
+            alert('create successfully with ID: ' + data.lead_id);
         } else {
-            alert('Lỗi: ' + data.message);
+            alert('errori: ' + data.message);
         }
     })
     .catch(error => {
-        console.error('Lỗi:', error);
+        console.error('error:', error);
     });
 });
 </script>
