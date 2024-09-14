@@ -67,13 +67,27 @@ I hope this post helps you start your learning journey effectively. Good luck!
 
 Vui lòng điền thông tin vào form dưới đây:
 
+<h2>Lead Form</h2>
+
 <form id="leadForm">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="text" name="phone" placeholder="Phone Number" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <input type="text" name="company" placeholder="Your Company" required><br>
-    <input type="text" name="subject" placeholder="Subject" required><br>
-    <textarea name="question" placeholder="Your Question" required></textarea><br>
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="text" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+    <label for="company">Your Company:</label><br>
+    <input type="text" id="company" name="company" placeholder="Your Company" required><br><br>
+
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
+
+    <label for="question">Your Question:</label><br>
+    <textarea id="question" name="question" placeholder="Your Question" required></textarea><br><br>
+
     <button type="submit">Submit</button>
 </form>
 
@@ -84,12 +98,13 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
     // Lấy dữ liệu từ form
     var formData = {
         name: this.name.value,
-        phone: this.phone.value,
         email: this.email.value,
+        phone: this.phone.value,
         company: this.company.value,
         subject: this.subject.value,
         question: this.question.value
     };
+    console.log(JSON.stringify(formData));
 
     // Gửi dữ liệu đến API Odoo
     fetch('http://localhost:8069/api/lead', {
@@ -97,19 +112,26 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
     })
-    .then(response => response.json())
+    .then(response => {
+        // Kiểm tra nếu phản hồi có dữ liệu JSON hợp lệ
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();  
+    })
     .then(data => {
         if (data.status === 'success') {
-            alert('create successfully with ID: ' + data.lead_id);
+            alert('Create successfully with ID: ' + data.lead_id);
         } else {
-            alert('errori: ' + data.message);
+            alert('Error: ' + data.message);
         }
     })
     .catch(error => {
-        console.error('error:', error);
+        console.error('Error:', error);
     });
+
 });
 </script>
 
