@@ -54,7 +54,7 @@ To help you choose the right learning method, here's a comparison of common lear
 | **Real Projects** | High practical skills, deeper understanding of applications | Can take a long time to complete |
 
 
-I hope this posts helps you start your learning journey effectively. Good luck!
+I hope this post helps you start your learning journey effectively. Good luck!
 
 ### Comments and discussions 
 
@@ -62,58 +62,55 @@ I hope this posts helps you start your learning journey effectively. Good luck!
 
 <iframe src="https://forms.gle/DdmAidKFda4MUDfP6" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">🔃Đang tải…</iframe>
 
-# Liên hệ với chúng tôi
 
-Vui lòng điền thông tin vào form dưới đây để liên hệ với chúng tôi:
+### Form Liên hệ
+
+Vui lòng điền thông tin vào form dưới đây:
 
 <form id="leadForm">
-    <label for="name">Tên của bạn:</label><br>
-    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required><br><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required><br><br>
-    <label for="phone">Số điện thoại:</label><br>
-    <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required><br><br>
-    <label for="company">Công ty:</label><br>
-    <input type="text" id="company" name="company" placeholder="Nhập tên công ty của bạn" required><br><br>
-    <label for="subject">Chủ đề:</label><br>
-    <input type="text" id="subject" name="subject" placeholder="Nhập chủ đề" required><br><br>
-    <label for="question">Câu hỏi của bạn:</label><br>
-    <textarea id="question" name="question" placeholder="Nhập câu hỏi của bạn" required></textarea><br><br>
-    <button type="button" onclick="submitForm()">Gửi</button>
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="text" name="phone" placeholder="Phone Number" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <input type="text" name="company" placeholder="Your Company" required><br>
+    <input type="text" name="subject" placeholder="Subject" required><br>
+    <textarea name="question" placeholder="Your Question" required></textarea><br>
+    <button type="submit">Submit</button>
 </form>
 
 <script>
-function submitForm() {
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Ngăn form gửi theo cách mặc định
+
     // Lấy dữ liệu từ form
     var formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        company: document.getElementById('company').value,
-        subject: document.getElementById('subject').value,
-        question: document.getElementById('question').value
+        name: this.name.value,
+        phone: this.phone.value,
+        email: this.email.value,
+        company: this.company.value,
+        subject: this.subject.value,
+        question: this.question.value
     };
 
-    // Gửi dữ liệu đến API Odoo bằng cách sử dụng fetch
-    fetch('http://localhost:8069/api/lead', {
+    // Gửi dữ liệu đến API Odoo
+    fetch('http://your-odoo-domain.com/api/lead', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
     })
     .then(response => response.json())
     .then(data => {
         if (data.status === 'success') {
-            alert('Tạo lead thành công với ID: ' + data.lead_id);
+            alert('Tạo cơ hội thành công với ID: ' + data.lead_id);
         } else {
             alert('Lỗi: ' + data.message);
         }
     })
-    .catch((error) => {
+    .catch(error => {
         console.error('Lỗi:', error);
     });
-}
+});
 </script>
 
 
