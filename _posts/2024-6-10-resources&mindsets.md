@@ -67,6 +67,8 @@ I hope this post helps you start your learning journey effectively. Good luck!
 
 Vui lòng điền thông tin vào form dưới đây:
 
+```html
+
 <h2>Lead Form</h2>
 
 <form id="leadForm">
