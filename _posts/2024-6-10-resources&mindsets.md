@@ -66,7 +66,7 @@ I hope this posts helps you start your learning journey effectively. Good luck!
 
 Vui lòng điền thông tin vào form dưới đây để liên hệ với chúng tôi:
 
-<form id="leadForm" method="POST" action="http://localhost:8069/api/lead">
+<form id="leadForm">
     <label for="name">Tên của bạn:</label><br>
     <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required><br><br>
     <label for="email">Email:</label><br>
@@ -79,6 +79,41 @@ Vui lòng điền thông tin vào form dưới đây để liên hệ với chú
     <input type="text" id="subject" name="subject" placeholder="Nhập chủ đề" required><br><br>
     <label for="question">Câu hỏi của bạn:</label><br>
     <textarea id="question" name="question" placeholder="Nhập câu hỏi của bạn" required></textarea><br><br>
-    <input type="submit" value="Gửi">
+    <button type="button" onclick="submitForm()">Gửi</button>
 </form>
+
+<script>
+function submitForm() {
+    // Lấy dữ liệu từ form
+    var formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value,
+        subject: document.getElementById('subject').value,
+        question: document.getElementById('question').value
+    };
+
+    // Gửi dữ liệu đến API Odoo bằng cách sử dụng fetch
+    fetch('http://localhost:8069/api/lead', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert('Tạo lead thành công với ID: ' + data.lead_id);
+        } else {
+            alert('Lỗi: ' + data.message);
+        }
+    })
+    .catch((error) => {
+        console.error('Lỗi:', error);
+    });
+}
+</script>
+
 
