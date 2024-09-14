@@ -65,7 +65,6 @@ I hope this post helps you start your learning journey effectively. Good luck!
 
 ### Form Liên hệ
 
-Vui lòng điền thông tin vào form dưới đây:
 
 ```html
 
