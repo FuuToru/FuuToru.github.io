@@ -69,22 +69,16 @@ Vui lòng điền thông tin vào form dưới đây để liên hệ với chú
 <form id="leadForm" method="POST" action="http://localhost:8069/api/lead">
     <label for="name">Tên của bạn:</label><br>
     <input type="text" id="name" name="name" placeholder="Nhập tên của bạn" required><br><br>
-
     <label for="email">Email:</label><br>
     <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required><br><br>
-
     <label for="phone">Số điện thoại:</label><br>
     <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn" required><br><br>
-
     <label for="company">Công ty:</label><br>
     <input type="text" id="company" name="company" placeholder="Nhập tên công ty của bạn" required><br><br>
-
     <label for="subject">Chủ đề:</label><br>
     <input type="text" id="subject" name="subject" placeholder="Nhập chủ đề" required><br><br>
-
     <label for="question">Câu hỏi của bạn:</label><br>
     <textarea id="question" name="question" placeholder="Nhập câu hỏi của bạn" required></textarea><br><br>
-
     <input type="submit" value="Gửi">
 </form>
 
